@@ -1,0 +1,47 @@
+GET http://localhost:8080/api/v1/test
+
+{}
+
+###
+
+GET http://localhost:8080/api/v1/reactive-test
+
+{}
+
+###
+
+GET http://localhost:8080/api/v1/addressbooks?page=0&size=100
+
+{}
+
+###
+
+POST http://localhost:8080/api/v1/addressbook
+Content-Type: application/json
+
+{
+"firstName" : "Ivan",
+"lastName" : "Ivanov",
+"phone" : "+799999999",
+"birthday" : "2000-01-10"
+}
+
+###
+
+DELETE http://localhost:8080/api/v1/addressbooks/1
+
+{}
+
+
+###
+
+GET http://localhost:8080/api/v1/addressbooks/-99
+
+{}
+
+
+###
+
+DELETE http://localhost:8080/api/v1/addressbooks/-999
+
+{}
